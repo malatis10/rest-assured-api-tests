@@ -1,73 +1,67 @@
-# User API Automation Project
+
+User API Automation Project
 
 This project demonstrates API automation testing using Java, Rest Assured, TestNG, and Faker library. It covers basic CRUD operations on the Swagger Petstore User API.
 
----
+Project Overview
+API under test: Swagger Petstore User API (https://petstore.swagger.io/)
 
-## Project Overview
+Operations automated: Create user, Get user, Update user, Delete user
 
-- **API under test:** Swagger Petstore User API ([https://petstore.swagger.io/](https://petstore.swagger.io/))
-- **Operations automated:** Create user, Get user, Update user, Delete user
-- **Tools used:**  
-  - Java  
-  - Rest Assured  
-  - TestNG  
-  - Faker (for generating test data)
+Tools used:
 
----
+Java
 
-## Project Structure
+Rest Assured
 
-- `com.api.Payload` - Contains POJO classes representing request payloads  
-- `com.api.Endpoints` - Contains endpoint URLs and methods to call API endpoints  
-- `com.api.Tests` - Contains TestNG test classes to validate API functionality
+TestNG
 
----
+Faker (for generating test data)
 
-## How to Run
+Project Structure
+com.api.Payload - Contains POJO classes representing request payloads
 
-1. Clone the repository:  
-   `git clone <your-repo-url>`
+com.api.Endpoints - Contains endpoint URLs and methods to call API endpoints
 
-2. Navigate to the project directory:  
-   `cd Project`
+com.api.Tests - Contains TestNG test classes to validate API functionality
 
-3. Run tests using Maven:  
-   `mvn clean test`
+How to Run
+Clone the repository:
+git clone <your-repo-url>
 
----
+Navigate to the project directory:
+cd Project
 
-## Sample Test Flow
+Run tests using Maven:
+mvn clean test
 
-- Generate random user data  
-- Create user via POST API  
-- Verify user creation by fetching via GET API  
-- Update user details via PUT API  
-- Delete user via DELETE API  
+Sample Test Flow
+Generate random user data
 
----
+Create user via POST API
 
-## Notes
+Verify user creation by fetching via GET API
 
-- Tests are designed with proper assertions on HTTP status codes  
-- Thread.sleep is used between tests to ensure server processing  
-- Faker library helps create unique test data for each test run
+Update user details via PUT API
 
----
+Delete user via DELETE API
 
-## Future Enhancements
+Notes
+CI/CD pipeline integration is already configured to run tests automatically on commits.
 
-- Implement data-driven testing using Excel/JSON  
-- Integrate reporting with Allure or ExtentReports  
-- Add authentication and negative test scenarios  
-- Setup CI/CD pipeline integration
+Tests include assertions on HTTP status codes
 
----
+Thread.sleep is used between tests to allow server processing
 
-## Author
+Faker library generates unique test data for each test run
 
+Future Enhancements
+Data-driven testing using Excel/JSON
+
+Reporting integration (Allure or ExtentReports)
+
+Add authentication and negative test scenarios
+
+Author
 Malati Sanganagoudra
 
----
-
-Feel free to reach out if you want help or improvements for this project!
