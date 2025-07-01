@@ -66,7 +66,7 @@ public class userTest {
         res.then().log().all();
 
         // Validate response status code
-        Thread.sleep(2000);  // wait 2 seconds before checking
+        Thread.sleep(5000);  // wait 2 seconds before checking
         Assert.assertEquals(res.getStatusCode(), 200);
     }
 
